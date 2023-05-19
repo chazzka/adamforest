@@ -2,10 +2,11 @@
 
 require "bundler/setup"
 require "adamforest"
+require "adamforest/services/helper"
 
 module Main
   include AdamForest
-
+  include HelperContainer.new(Helper)
   puts "main"
 
   forest = Forest.new([[1, 1], [2, 2], [3, 3], [7, 1000]], trees_count: 1000)

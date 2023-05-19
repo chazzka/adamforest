@@ -1,20 +1,18 @@
 # frozen_string_literal: true
 
 require_relative "adamforest/version"
-require_relative "adamforest/services/helper"
+require_relative "adamforest/services/helper_container"
 require_relative "adamforest/node"
 
 module AdamForest
-  include Node
-  include Helper
 
-  class Forest
+  class Forest < HelperContainer
     attr_reader :trees, :forest_helper
 
     def initialize(
       data,
       trees_count: 100,
-      forest_helper: Helper,
+      forest_helper: Forest.class_variable_defined?(:@@service) ? @@service : nil,
       batch_size: 128,
       max_depth: Math.log(batch_size, 2).ceil,
       random: Random
