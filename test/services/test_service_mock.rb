@@ -4,7 +4,6 @@ require "test_helper"
 require "adamforest/services/helper_mock"
 
 class TestServiceMock < Minitest::Test
-  include HelperMock
 
   def test_dimensional_group_by
     hp = Mock.new(max_depth: 3)

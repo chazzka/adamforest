@@ -10,7 +10,6 @@ class Float
 end
 
 class TestAdamforest < Minitest::Test
-  include HelperMock
   include AdamForest
 
   def test_that_it_has_a_version_number

@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-module QuickSort
-
 class QuickSort
 
   def split_point(data)
@@ -23,6 +21,4 @@ class QuickSort
   def end_condition(data)
     data.all? { |x| x == data.first }
   end
-end
-
 end

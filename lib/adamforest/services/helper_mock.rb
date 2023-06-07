@@ -1,10 +1,8 @@
 # frozen_string_literal: true
 
-module HelperMock
-
-DataPoint = Data.define(:depth, :data)
-
 class Mock
+
+  DataPoint = Data.define(:depth, :data)
 
   def initialize(max_depth: 16)
     @max_depth = max_depth
@@ -34,6 +32,4 @@ class Mock
   def end_condition(data)
     data == @max_depth || data.length <= 1
   end
-end
-
 end
