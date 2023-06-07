@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in adamforest.gemspec
+# Specify your gem's dependencies in rubyforest.gemspec
 gemspec
 
 gem "rake", "~> 13.0"

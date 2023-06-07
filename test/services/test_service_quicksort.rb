@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 require "test_helper"
-require "adamforest/services/quicksort"
+require "rubyforest/services/quicksort"
 
 class TestServiceQuicksort < Minitest::Test
-  include AdamForest
+  include RubyForest
 
   def test_quick_sort_neighbours
     input = [5, 8, 3, 4, 2, 7]

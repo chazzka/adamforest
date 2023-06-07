@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "test_helper"
-require "adamforest/services/helper_mock"
+require "rubyforest/services/helper_mock"
 
 class TestServiceMock < Minitest::Test
 

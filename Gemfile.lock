@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    adamforest (0.1.0)
+    rubyforest (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -35,10 +35,10 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  adamforest!
   minitest (~> 5.0)
   rake (~> 13.0)
   rubocop (~> 1.51)
+  rubyforest!
 
 BUNDLED WITH
    2.4.10

@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require_relative "adamforest/version"
-require_relative "adamforest/node"
+require_relative "rubyforest/version"
+require_relative "rubyforest/node"
 
-module AdamForest
+module RubyForest
   include Node
 
   class Forest

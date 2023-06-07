@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 require "test_helper"
-require "adamforest/services/isolation"
+require "rubyforest/services/isolation"
 
 class TestServiceIsolation < Minitest::Test
-  include AdamForest
+  include RubyForest
   def test_anomaly_score
     input = [[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [2, 2]]
 

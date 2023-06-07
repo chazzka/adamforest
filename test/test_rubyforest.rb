@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "test_helper"
-require "adamforest/services/helper_mock"
+require "rubyforest/services/helper_mock"
 
 class Float
   def to_h
@@ -9,11 +9,11 @@ class Float
   end
 end
 
-class TestAdamforest < Minitest::Test
-  include AdamForest
+class TestRubyforest < Minitest::Test
+  include RubyForest
 
   def test_that_it_has_a_version_number
-    refute_nil ::Adamforest::VERSION
+    refute_nil ::Rubyforest::VERSION
   end
 
   def test_init_from_data

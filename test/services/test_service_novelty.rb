@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 require "test_helper"
-require "adamforest/services/novelty"
+require "rubyforest/services/novelty"
 
 class TestServiceNovelty < Minitest::Test
-  include AdamForest
+  include RubyForest
 
   def test_split_point_ranges
     datapoint = Novelty.new(batch_size: 128, random: Random.new(2)).get_sample([[1, 1], [1, 1]])

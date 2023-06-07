@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 require "bundler/setup"
-require "adamforest"
-require "adamforest/services/quicksort"
-require "adamforest/services/novelty"
-require "adamforest/services/isolation"
+require "rubyforest"
+require "rubyforest/services/quicksort"
+require "rubyforest/services/novelty"
+require "rubyforest/services/isolation"
 
-include AdamForest
+include RubyForest
 
 puts "main"
 

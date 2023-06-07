@@ -1,4 +1,4 @@
-# Adamforest
+# ruby-forest
 
 how to install:
 
