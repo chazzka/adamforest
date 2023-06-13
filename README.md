@@ -1,4 +1,4 @@
-# ruby-forest
+# MlForest
 
 how to install:
 
