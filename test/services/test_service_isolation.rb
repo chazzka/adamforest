@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 require "test_helper"
-require "rubyforest/services/isolation"
+require "ml_forest/services/isolation"
 
 class TestServiceIsolation < Minitest::Test
-  include RubyForest
+  include Forest
   def test_anomaly_score
     input = [[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [2, 2]]
 
-    forest = Forest.new(input, trees_count: 4, forest_helper: Isolation.new)
+    forest = Tree.new(input, trees_count: 4, forest_helper: Isolation.new)
 
     anomaly = forest.evaluate_forest([2, 2])
     a_depths = anomaly.map(&:depth)

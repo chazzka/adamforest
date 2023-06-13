@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 require "test_helper"
-require "rubyforest/services/novelty"
+require "ml_forest/services/novelty"
 
 class TestServiceNovelty < Minitest::Test
-  include RubyForest
+  include Forest
 
   def test_split_point_ranges
     datapoint = Novelty.new(batch_size: 128, random: Random.new(2)).get_sample([[1, 1], [1, 1]])
@@ -29,7 +29,7 @@ class TestServiceNovelty < Minitest::Test
   def test_novelty_run
     input = [[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [2, 2]]
 
-    forest = Forest.new(input, trees_count: 4, forest_helper: Novelty.new)
+    forest = Tree.new(input, trees_count: 4, forest_helper: Novelty.new)
 
     anomaly = forest.evaluate_forest([2, 2])
     a_depths = anomaly.map(&:depth)

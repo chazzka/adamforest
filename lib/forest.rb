@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-require_relative "rubyforest/version"
-require_relative "rubyforest/node"
+require_relative "ml_forest/version"
+require_relative "ml_forest/node"
 
-module RubyForest
+module Forest
   include Node
 
-  class Forest
+  class Tree
     attr_reader :trees, :forest_helper
 
     def initialize(

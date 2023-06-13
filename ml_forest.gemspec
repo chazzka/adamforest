@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "lib/rubyforest/version"
+require_relative "lib/ml_forest/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "rubyforest"
-  spec.version = Rubyforest::VERSION
+  spec.name = "ml_forest"
+  spec.version = MlForest::VERSION
   spec.authors = ["Adam Ulrich"]
   spec.email = ["a_ulrich@utb.cz"]
 

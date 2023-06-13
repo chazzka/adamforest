@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rubyforest (0.1.0)
+    ml_forest (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -36,9 +36,9 @@ PLATFORMS
 
 DEPENDENCIES
   minitest (~> 5.0)
+  ml_forest!
   rake (~> 13.0)
   rubocop (~> 1.51)
-  rubyforest!
 
 BUNDLED WITH
    2.4.10
