@@ -5,10 +5,10 @@ require_relative "lib/ml_forest/version"
 Gem::Specification.new do |spec|
   spec.name = "ml_forest"
   spec.version = MlForest::VERSION
-  spec.authors = ["Adam Ulrich"]
-  spec.email = ["a_ulrich@utb.cz"]
+  spec.authors = ["Adam Ulrich", "Jan Krňávek"]
+  spec.email = ["a_ulrich@utb.cz", "krnavek@utb.cz"]
 
-  spec.summary = "My implementation of Isolation Forest algorithm."
+  spec.summary = "Isolation Forest algorithm."
   spec.required_ruby_version = ">= 2.6.0"
 
   # Specify which files should be added to the gem when it is released.
