@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    adamforest (0.1.0)
+    ml_forest (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -35,8 +35,8 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  adamforest!
   minitest (~> 5.0)
+  ml_forest!
   rake (~> 13.0)
   rubocop (~> 1.51)
 
