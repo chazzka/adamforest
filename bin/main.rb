@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "bundler/setup"
-require "forest"
+require "ml_forest"
 require "ml_forest/services/quicksort"
 require "ml_forest/services/novelty"
 require "ml_forest/services/isolation"

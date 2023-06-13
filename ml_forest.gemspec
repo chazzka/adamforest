@@ -8,7 +8,9 @@ Gem::Specification.new do |spec|
   spec.authors = ["Adam Ulrich", "Jan Krňávek"]
   spec.email = ["a_ulrich@utb.cz", "krnavek@utb.cz"]
 
-  spec.summary = "Isolation Forest algorithm."
+  spec.summary = "Random Forest algorithm."
+  spec.description = "Ruby implementation of the Random Forest algorithm, it allows to use services such as ml_forest/isolation."
+  spec.homepage = "https://github.com/chazzka/ml_forest"
   spec.required_ruby_version = ">= 2.6.0"
 
   # Specify which files should be added to the gem when it is released.
