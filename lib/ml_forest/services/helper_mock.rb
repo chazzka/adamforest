@@ -4,7 +4,7 @@ class Mock
 
   DataPoint = Data.define(:depth, :data)
 
-  def initialize(max_depth: 16)
+  def initialize(max_depth: 24)
     @max_depth = max_depth
   end
 
